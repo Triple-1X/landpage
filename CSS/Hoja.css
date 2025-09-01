@@ -145,7 +145,7 @@ ul li a:hover  {
     color: #c7d2fe;
     font-size: 20px;
 	
-	transition: transform 0.3s, ease, box-shadow 0,5s ease;
+	transition: transform 0.3s ease, box-shadow 0.5s ease;
     display: block;
 }
 iframe {
@@ -189,7 +189,7 @@ iframe {
 	border: 2px solid #120123;  
     color: #c7d2fe;
     font-size: 20px;
-	transition: transform 0.3s, ease, box-shadow 0,5s ease;
+	transition: transform 0.3s ease, box-shadow 0.5s ease;
     display: block;
 }
 .sec_noticia:hover  {
@@ -261,7 +261,7 @@ p .badge-descuento {
 }
 #contenedor footer {
 	width: 1920px;
-	height: 220px;
+	height: 240px;
 	background-color: #000000;
 	float: left;
 	color: #dddddd;

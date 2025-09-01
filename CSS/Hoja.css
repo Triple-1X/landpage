@@ -15,6 +15,20 @@
   font-family: "Passion One", sans-serif;
   font-weight: 900;
   font-style: normal;
+
+// <weight>: Use a value from 400 to 800
+// <uniquifier>: Use a unique and descriptive class name
+
+.sen-<uniquifier> {
+  font-family: "Sen", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+
+
 }*/
 * {
     -webkit-box-sizing: border-box;
@@ -134,6 +148,16 @@ ul li a:hover  {
 	transition: transform 0.3s, ease, box-shadow 0,5s ease;
     display: block;
 }
+iframe {
+	
+	float: left;
+	margin: 30px;
+	border-radius: 10px;
+	width: 670px;
+	height: 400px;
+	
+}
+
 .sec_inicio:hover {
 	-webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.00);
     box-shadow: 0 10px 20px rgba(0,0,0,0.00);
@@ -142,12 +166,15 @@ ul li a:hover  {
 	}
 	
 .sec_inicio img {
-    float: left;
-    margin: 30px;
-    border-radius: 10px;
-    width: 700px;
-    height: 400px;
+	float: left;
+	margin: 30px;
+	border-radius: 10px;
+	width: 670px;
+	height: 400px;
 	}
+
+
+
 
 .sec_noticia {
 	width: 760px;
@@ -183,38 +210,37 @@ ul li a:hover  {
   color: #c7d2fe;
   font-size: 20px;
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.5s ease, color 0.2s ease, background-size 0.3s ease;
+	background-repeat: no-repeat;
+  background-position: center center;
+	background-size: 0 0;
 }
 
 .artc_desc:hover {
-    color: transparent; /* oculta el texto */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(../img/idk.jpg);
-    transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-    cursor: pointer;
-    width: 760px;
+  color: transparent;           
+  background-size: cover;        
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  cursor: pointer;
 }
 
 
-
-
-
-
-h3 {
+h2 {
 	font-family: "Passion One", sans-serif;
 	color: #FFFFFF;
 	margin-top: 5px;
 	margin-right: 5px;
 	margin-bottom: 5px;
 	margin-left: 5px;
+	text-align: left;
 }
 p {
-    font-family: "Passion One", sans-serif;
-    border-radius: 1px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+	font-family: "Sen", sans-serif;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	text-align: left;
 }
 
 

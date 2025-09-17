@@ -1,0 +1,291 @@
+@charset "utf-8";
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 14px;
+	background-image: url(../img/arctic-monkeys-wallpaper-preview.jpg);
+}
+
+#contenedor {
+	width: 90vw;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #000000;
+	height: 300vh;
+}
+#contenedor header {
+	width: 90vw;
+	float: left;
+	height: 15vh;
+	background-color: #000000;
+	font-size: 1rem;
+	line-height: 10vh;
+	position: sticky;
+	top: 0px;
+	display: flex;
+	align-items: center; 
+	padding: 0 2vw;
+	z-index: 9999;
+}
+#logo {
+	
+  width: 20vw;
+  height: 100%;
+  display: flex;
+  align-items: center;      
+}
+#logo img{
+  height: 100%;   
+  width: 100%;    
+  object-fit: contain;
+  display: block;
+}
+
+
+header nav ul {
+float: right;        
+  margin-right: 3vw;   
+	
+}
+nav ul li {
+	
+width: auto;               
+  height: 10vh;
+  float: left;
+  text-align: left;           
+  padding: 0 3vw;             
+  display: flex;              
+  align-items: center;
+
+  margin: 0;
+  
+}
+
+nav ul li a {
+  text-decoration: none;    
+  color: #FFFFFF;            
+  font-size: 1.2vw;          
+  transition: color 0.3s ease;
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: 400;
+}
+
+nav ul li a:hover {
+  color: #B0B0B0;            
+}
+
+#contenedor header nav {
+  width: 70vw;
+  height: 10vh;
+  
+}
+#contenedor main {
+    width: 90vw;
+    height: 100vh;
+    background-color: #0f0f0f;
+    float: left;
+}
+#contenedor main article {
+	width: 45vw;
+	height: 33.3vh;
+	float: left;
+	background-size: cover;
+	background-position: center;
+	border-radius: 1vh;
+	position: relative;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+#contenedor main article:hover {
+	
+	transform: translateY(-1vh) scale(1.03);
+	box-shadow: 0 2vh 3vw rgba(0,0,0,0.4);
+	cursor: pointer;
+}
+
+#contenedor main article h3 {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	margin: 0;
+	padding: 1vh;
+	font-size: 1.2vw;
+	text-align: center;
+	color: #ffffff;
+	background: rgba(0,0,0,0.6);  
+    font-family: "Signika", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    
+	
+	}
+
+#sec1{
+  width: 90vw;
+  height: 100vh;
+  float: left;
+  background-color: #000000;
+  scroll-margin-top: 15vh;
+  padding: 4vh 2vw;                 
+}
+
+
+#sec1 .hits-title{
+  font-family: "Hammersmith One", sans-serif;
+  color: #FFFFFF;
+  font-size: 2vw;
+  letter-spacing: 0.2vw;
+  margin-bottom: 3vh;
+	text-align: center;
+}
+
+#sec1 .hit{
+  width: 86vw;
+  height: 12vh;                  
+  background-color: #0f0f0f;
+  border-radius: 1vh;
+  display: flex;
+  align-items: center;
+  padding: 0 2vw;
+  margin-bottom: 2vh;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+#sec1 .hit:hover{
+  transform: translateY(-0.5vh);
+  box-shadow: 0 1vh 2vw rgba(0,0,0,0.35);
+  background-color: #141414;
+  cursor: pointer;
+}
+
+#sec1 .cover{
+  width: 9vh;                       
+  height: 9vh;
+  border-radius: 0.8vh;             
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 0 0 auto;
+  margin-right: 2vw;
+	
+}
+
+#sec1 .meta{
+  flex:auto;
+  
+	
+}
+
+#sec1 .song{
+  font-family: "Hammersmith One", sans-serif;
+  color: #FFFFFF;
+  font-size: 1.3vw;
+  line-height: 1.2;
+  margin: 0 0 0.8vh 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#sec1 .album{
+  font-family: "Signika", sans-serif;
+  color: #B0B0B0;
+  font-size: 1vw;
+  line-height: 1;
+ 
+}
+
+
+#sec1 .duration{
+	color: #7B7B7B;
+	font-family: "Signika", sans-serif;
+	font-size: 1vw;
+	margin-left: 2vw;
+	flex: 0 0 auto;
+}
+
+#sec1 .hit:hover .song{
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 0.3vh;
+  padding-bottom: 0.3vh;
+}
+#sec2{
+  width: 90vw;
+  min-height: 100vh;
+  float: left;
+  background-color: #0b0b0b;
+  scroll-margin-top: 15vh;
+  padding: 4vh 4vw;
+}
+
+
+#sec2 .history-title{
+  font-family: "Hammersmith One", sans-serif;
+  color: #FFFFFF;
+  font-size: 2vw;
+  letter-spacing: 0.2vw;
+  
+  text-align: center;
+}
+
+
+#sec2 .timeline{
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+
+#sec2 .event{
+  background-color: #141414;
+  padding: 2vh 2vw;
+  border-radius: 1vh;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#sec2 .event:hover{
+  transform: translateX(1vw);
+  box-shadow: 0 1vh 2vw rgba(0,0,0,0.5);
+}
+
+#sec2 .event h3{
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 1.3vw;
+  color: #FFFFFF;
+  margin: 0 0 1vh 0;
+}
+
+#sec2 .event p{
+  font-family: "Signika", sans-serif;
+  font-size: 1vw;
+  line-height: 1.4;
+  color: #CCCCCC;
+  margin: 0;
+}
+#contenedor footer {
+  width: 90vw;
+  height: 12vh;
+  background-color: #000000;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2vw;                    
+  padding: 0 2vw;
+}
+
+#contenedor footer p {
+  font-family: "Signika", sans-serif;
+  font-size: 1vw;
+  color: #cccccc;
+  margin: 0;
+}
